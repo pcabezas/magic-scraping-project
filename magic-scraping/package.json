@@ -1,0 +1,16 @@
+{
+  "name": "magic-scraping",
+  "version": "1.0.0",
+  "description": "Web scraping to get info of magic cards pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "p.cabezas.alvarez@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3",
+    "puppeteer": "^19.8.3"
+  }
+}
