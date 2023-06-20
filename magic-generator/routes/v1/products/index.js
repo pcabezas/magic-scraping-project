@@ -17,19 +17,19 @@ const createProductValidation = () => {
         }
       }
     },
-    siteUrl: {
+    url: {
       isLength: {
         options: { min: 15 },
       }
     },
-    siteImage: {
+    image: {
       isLength: {
         options: { min: 10 },
       }
     },
-    sitePrice: {
+    price: {
       isInt: { min: 1, max: 10000000 },
-      errorMessage: 'sitePrice must be between 1 and 10000000'
+      errorMessage: 'price must be between 1 and 10000000'
     }
   })
 }

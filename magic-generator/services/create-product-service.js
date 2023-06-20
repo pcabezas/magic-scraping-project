@@ -22,9 +22,9 @@ class CreateProductService extends CreateObjectService {
             name: this.data?.name,
             description: this.data?.description,
             brand: this.data?.brand,
-            siteUrl: this.data?.url,
-            sitePrice: this.cleanPrice(this.data?.price),
-            siteImage: this.data?.image
+            url: this.data?.url,
+            price: this.cleanPrice(this.data?.price),
+            image: this.data?.image
            }
   }
 

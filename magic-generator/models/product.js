@@ -11,17 +11,17 @@ const ProductSchema = Schema({
   brand: {
     type: String
   },
-  siteUrl: {
+  url: {
     type: String,
-    required: [true, 'siteUrl can\'t be null '],
+    required: [true, 'url can\'t be null '],
   },
-  sitePrice: {
+  price: {
     type: Number,
     required: [true, 'price can\'t be null']
   },
-  siteImage: {
+  image: {
     type: String,
-    required: [true, 'siteImage can\'t be null']
+    required: [true, 'image can\'t be null']
   }
 });
 
