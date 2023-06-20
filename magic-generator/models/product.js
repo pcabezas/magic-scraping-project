@@ -5,6 +5,12 @@ const ProductSchema = Schema({
     type: String,
     required: [true, 'name can\'t be null '],
   },
+  description: {
+    type: String
+  },
+  brand: {
+    type: String
+  },
   siteUrl: {
     type: String,
     required: [true, 'siteUrl can\'t be null '],

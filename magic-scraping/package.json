@@ -10,7 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.10.3",
+    "axios": "^1.4.0",
     "dotenv": "^16.0.3",
-    "puppeteer": "^19.8.3"
+    "puppeteer": "^19.8.3",
+    "xml2js": "^0.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0"
   }
 }

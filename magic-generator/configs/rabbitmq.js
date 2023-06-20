@@ -1,4 +1,5 @@
 const amqp = require('amqplib');
+const CreateObjetFactory = require('../services/create-object-factory');
 
 class RabbitMqConnector {
   constructor () {
@@ -35,8 +36,10 @@ class RabbitMqConnector {
 
   processTask (queue){
     this.channel.consume(queue, message => {
-      const product = JSON.parse(message.content.toString());
-      console.log(`Received product: ${JSON.stringify(product)}`);
+      const data = JSON.parse(message.content.toString());
+      const factory = new CreateObjetFactory();
+      const serviceManager = factory.create(queue, data);
+      serviceManager.create()
       this.channel.ack(message);
     });
 
